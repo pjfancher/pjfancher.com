@@ -12,9 +12,9 @@ body { margin: 0; font-size: 1em; line-height: 1.4; color:#444;}
 ::-moz-selection { }
 ::selection {  }
 h1, h2, h3, h4 , h5 ,h6 {margin: 0;padding: 0; color: #333;}
-a { color: #880003; }
-a:visited { color: #880003; }
-a:hover { color: #cc0004; text-decoration: none;}
+a { color: #880003; text-decoration: none;}
+a:visited { color: #880003; text-decoration: none;}
+a:hover { color: #cc0004; text-decoration: underline;}
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
 abbr[title] { border-bottom: 1px dotted; }
@@ -76,6 +76,11 @@ h2{
   font-size: 150%;
 }
 
+h3{
+  letter-spacing: 1px;
+  font-size: 115%;
+}
+
 .main{
   margin-top: 20px;
   border-top: 8px solid #666;
@@ -91,7 +96,7 @@ h2{
 }
 
 .section-content{
-  font-size: 90%;
+  font-size: 80%;
 }
 
 .name, .contact{
@@ -110,6 +115,10 @@ h2{
   margin-top: 5px;
 }
 
+.contact-link{
+  font-size: 85%;
+}
+
 
 .skills{
   float: left;
@@ -122,7 +131,6 @@ ul.first{
 
 .footer{
   font-size: 75%;
-  font-style: italic;
   text-align: center;
   margin-bottom: 10px;
 }
