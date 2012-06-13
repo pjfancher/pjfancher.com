@@ -1,4 +1,17 @@
-/* HTML5 Boilerplate  */
+/* PJ Fancher Resume */
+
+/*------------------------------------*\
+	*CONTENTS*
+	
+	HEADER
+	CONTACT
+	PDF
+	SKILLS
+	SITES
+	EMPLOY
+	EDUCATION
+	FOOTER
+\*------------------------------------*/
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
@@ -12,9 +25,9 @@ body { margin: 0; font-size: 1em; line-height: 1.4; color:#444;}
 ::-moz-selection { }
 ::selection {  }
 h1, h2, h3, h4 , h5 ,h6 {margin: 0;padding: 0; color: #333;}
-a { color: #880003; text-decoration: none;}
-a:visited { color: #880003; text-decoration: none;}
-a:hover { color: #cc0004; text-decoration: underline;}
+a { color: #f248ac; text-decoration: none;}
+a:visited { color: #f248ac; text-decoration: none;}
+a:hover { color: #960b5d; text-decoration: underline;}
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
 abbr[title] { border-bottom: 1px dotted; }
@@ -34,7 +47,7 @@ sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: b
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
 
-ul, ol { margin: 1em 0; padding: 0 0 0 40px; list-style: none;}
+ul, ol { margin: 0 0 1em 0; padding: 0 0 0 40px; list-style: none;}
 dd { margin: 0 0 0 40px; }
 nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
 
@@ -64,86 +77,77 @@ td { vertical-align: top; }
 
 .chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
-h1{
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  font-size: 200%;
-}
-
-h2{
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-size: 150%;
-}
-
-h3{
-  letter-spacing: 1px;
-  font-size: 115%;
-}
-
-.main{
-  margin-top: 20px;
-  border-top: 8px solid #666;
-}
-
-.container_12{
-  background-color: #f5f5f5;
-}
-
-.section{
-  border-bottom: 1px solid #ccc;
-  padding: 20px 0;
-}
-
-.section-content{
-  font-size: 80%;
-}
-
-.name, .contact{
-  padding: 20px 57px;
-}
-
-.content-wrapper{
-  min-height: 1000px;
-}
-
-.content{
-  padding: 10px 80px;
-}
-
-.contact{
-  margin-top: 5px;
-}
-
-.contact-link{
-  font-size: 85%;
-}
-
-
-.skills{
-  float: left;
-}
-
-ul.first{
-  padding: 0;
-}
-
-
-.footer{
-  font-size: 75%;
-  text-align: center;
-  margin-bottom: 10px;
-}
+/*------------------------------------*\
+	$HEADER
+\*------------------------------------*/
+h1{letter-spacing: 3px;text-transform: uppercase;font-size: 200%;}
+h2{letter-spacing: 2px;font-size: 120%;}
+h3{letter-spacing: 1px;font-size: 115%; line-height: 10px;padding-bottom: 5px;}
+.main{margin: 20px 0;border-top: 8px solid #666;}
+.container_12{background-color: #f5f5f5;}
+.content-wrapper{min-height: 1000px;}
+.content{padding: 10px 80px;}
+.section{border-bottom: 1px solid #ccc;padding: 20px 0;}
+.section-content{font-size: 80%;}
+ul.first{padding: 0;}
 
 
 
+/*------------------------------------*\
+	$CONTACT
+\*------------------------------------*/
+.name{padding: 20px 65px;}
+.contact{padding: 20px 0;}
+.contact{margin-top: 5px;position: relative;right:6em;}
+.contact-info, .contact-links{display: inline-table;}
+.contact-info{position:relative; bottom: 9px;}
+.contact-links{margin-left: 5px;}
+.contact-link{font-size: 85%;}
+
+/*------------------------------------*\
+	$PDF
+\*------------------------------------*/
+.pdf{bottom: 4em;}
+
+/*------------------------------------*\
+	$SKILLS
+\*------------------------------------*/
+.skills{float: left;}
+
+/*------------------------------------*\
+	$SITES
+\*------------------------------------*/
+.sites{padding-left: 0;}
+li.site{margin-top: 20px;padding-bottom: 20px;border-bottom: 1px solid #ccc;}
+li.site.first{margin-top: 0;}
+li.site.last{border-bottom: none;}
+.site-thumb{float: left;}
+.site-info{padding-left: 85px;}
+.site-name{font-weight: bold;}
+.site-details, .employer-description{margin-top: 10px;font-size: 95%;}
+
+/*------------------------------------*\
+	$EMPLOY
+\*------------------------------------*/
+.employers{padding-left: 0;}
+li.employer{margin-top: 20px;padding-bottom: 20px;border-bottom: 1px solid #ccc;}
+li.employer.first{margin-top: 0;}
+li.employer.last{border-bottom: none;}
+.employer-time, .employer-location{display: inline;color: #777;}
+.employer-name{font-weight: bold;}
+
+/*------------------------------------*\
+	$EDUCATION
+\*------------------------------------*/
+.education-city, .education-year{display: inline;color: #777;}
+
+/*------------------------------------*\
+	$FOOTER
+\*------------------------------------*/
+.footer{font-size: 75%;text-align: center;margin-bottom: 10px;}
 
 
-
-@media only screen and (min-width: 35em) {
-  
-
-}
+@media only screen and (min-width: 35em) {}
 
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
 .ir br { display: none; }
