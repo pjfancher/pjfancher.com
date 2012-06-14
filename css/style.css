@@ -83,7 +83,7 @@ td { vertical-align: top; }
 h1{letter-spacing: 3px;text-transform: uppercase;font-size: 200%;}
 h2{letter-spacing: 2px;font-size: 120%;}
 h3{letter-spacing: 1px;font-size: 115%; line-height: 10px;padding-bottom: 5px;}
-.header-container{border-bottom: 2px dotted #ccc;}
+.header-container{border-bottom: 2px dotted #ccc;max-height: 105px;}
 .main{margin: 20px 0;border-top: 8px solid #666;}
 .container_12{background-color: #f5f5f5;}
 .content-wrapper{min-height: 1000px;}
@@ -99,7 +99,7 @@ ul.first{padding: 0;}
 \*------------------------------------*/
 .name{padding: 20px 65px;}
 .contact{padding: 20px 0;}
-.contact{margin-top: 5px;position: relative;right:6em;}
+.contact{margin-top: 5px;position: relative;right:5em;}
 .contact-info, .contact-links{display: inline-table;}
 .contact-info{position:relative; bottom: 9px;}
 .contact-links{margin-left: 5px;}
@@ -108,9 +108,9 @@ ul.first{padding: 0;}
 /*------------------------------------*\
 	$PDF
 \*------------------------------------*/
-.save{bottom: 68px;padding: 10px 0;background-color: #e4e4e4;
+.save{top: 20px; right: 10px;padding: 10px 0;background-color: #e4e4e4;
 -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;}
-.save div{padding-left:50px;}
+.save div{padding-left:27px;}
 
 /*------------------------------------*\
 	$SKILLS
