@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/960.css">
 
   <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script type="text/javascript">function printpage(){window.print()}</script>
 </head>
 <body>
 <div class="main container_12">
@@ -44,8 +45,9 @@
 	       </div>
 	     </h5>  
 	   </div>
-	   <div class="pdf grid_3 push_3">
-	     <h5>Download PDF version</h5>
+	   <div class="save grid_3 push_3">
+	     <div class="pdf"><h5><a href="#">Download PDF version</a></h5></div>
+	     <div class="print"><h5><a href="#" onclick="printpage()">Print Resume</a></h5></div>
 	   </div>
    </div>
   </header>
@@ -55,10 +57,10 @@
       
       <div class="section intro">
         <div class="section-header grid_2">
-          <h2>Web Developer</h2>
+          <h2>Overview</h2>
         </div>
         <div class="section-content grid_8">
-          I am a Web Developer with 14 years experience. I began writing small web applications with Perl in 1998. I have well rounded experience with all aspects of Web Development from design (CSS+HTML) to Client-Side Scripting (Javascript, JQuery) to Server-Side scripting (PHP) to Database configuration, design & administration (MySQL) and Web Server configuration. For the past year I have been working heavily with Drupal 7.
+          I am a Web Developer with 14 years experience. I began writing small web applications with Perl in 1998. I have well rounded experience with all aspects of Web Development from design (CSS, HTML) to Client-Side Scripting (Javascript, JQuery) to Server-Side Scripting (PHP) to Database configuration, design & administration (MySQL) and Web Server configuration. For the past year I have been working heavily with Drupal 7.
         </div>
         <div class="clear"></div> 
       </div>
@@ -284,8 +286,6 @@
               </div>
             </li>
             
-          
-          
           </ul>
         </div>
         <div class="clear"></div> 
@@ -315,7 +315,12 @@
     </div>
   </div>
   <footer>
-   <div class="footer grid_12">PJ Fancher • 352-262-5915 • <a href=mailto:peejfancher@gmail.com>peejfancher@gmail.com</a></div>
+   <div class="clear"></div> 
+   <div class="footer grid_12">
+   <div class="foot">PJ Fancher</div>
+     <div class="foot">352-262-5915</div>
+     <div class="foot last"><a href=mailto:peejfancher@gmail.com>peejfancher@gmail.com</a></div>
+   </div>
   </footer>
 
 
