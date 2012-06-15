@@ -1,5 +1,4 @@
 /* PJ Fancher Resume */
-
 /*------------------------------------*\
 	*CONTENTS*
 	
@@ -12,7 +11,6 @@
 	EDUCATION
 	FOOTER
 \*------------------------------------*/
-
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 audio:not([controls]) { display: none; }
@@ -26,12 +24,7 @@ body { margin: 0; font-size: 1em; line-height: 1.4; color:#444;}
 ::selection {  }
 h1, h2, h3, h4 , h5 ,h6 {margin: 0;padding: 0; color: #333;}
 h1, h2{font-family: 'Yanone Kaffeesatz', sans-serif;}
-a { color: #f248ac; text-decoration: none;
--webkit-transition: all 0.3s ease-in-out;
--moz-transition: all 0.2s ease-in-out;
--o-transition: all 0.2s ease-in-out;
--ms-transition: all 0.2s ease-in-out;
-transition: all 0.2s ease-in-out;}
+a { color: #f248ac; text-decoration: none;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;-ms-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
 a:visited { color: #f248ac; text-decoration: none;}
 a:hover { color: #960b5d;background-color: #e4e4e4;}
 a:focus { outline: thin dotted; }
@@ -99,8 +92,6 @@ h6{letter-spacing: 1px;font-size: 75%;}
 .section-content{font-size: 80%;}
 ul.first{padding: 0;}
 
-
-
 /*------------------------------------*\
 	$CONTACT
 \*------------------------------------*/
@@ -117,7 +108,7 @@ ul.first{padding: 0;}
 \*------------------------------------*/
 .save{top: 28px; left: 10px;padding: 5px 0;background-color: #e4e4e4;
 -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;}
-.save div{padding-left:27px;}
+.save div{padding-left:29px;}
 
 /*------------------------------------*\
 	$SKILLS
@@ -158,7 +149,6 @@ li.employer.last{border-bottom: none;}
 .foot{display: inline;}
 .foot:after{content: " • ";}
 .foot.last:after{content: none;}
-
 
 @media only screen and (min-width: 35em) {}
 
