@@ -19,15 +19,21 @@ audio:not([controls]) { display: none; }
 [hidden] { display: none; }
 
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-html, button, input, select, textarea { font-family: arial,helvetica,clean,sans-serif; color: #222; }
+html, button, input, select, textarea { font-family: 'PT Sans', sans-serif; color: #222; }
 body { margin: 0; font-size: 1em; line-height: 1.4; color:#444;}
 
 ::-moz-selection { }
 ::selection {  }
 h1, h2, h3, h4 , h5 ,h6 {margin: 0;padding: 0; color: #333;}
-a { color: #f248ac; text-decoration: none;}
+h1, h2{font-family: 'Yanone Kaffeesatz', sans-serif;}
+a { color: #f248ac; text-decoration: none;
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;}
 a:visited { color: #f248ac; text-decoration: none;}
-a:hover { color: #960b5d; text-decoration: underline;}
+a:hover { color: #960b5d;background-color: #e4e4e4;}
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
 abbr[title] { border-bottom: 1px dotted; }
@@ -81,8 +87,9 @@ td { vertical-align: top; }
 	$HEADER
 \*------------------------------------*/
 h1{letter-spacing: 3px;text-transform: uppercase;font-size: 200%;}
-h2{letter-spacing: 2px;font-size: 120%;}
+h2{letter-spacing: 2px;font-size: 130%;}
 h3{letter-spacing: 1px;font-size: 115%; line-height: 10px;padding-bottom: 5px;}
+h6{letter-spacing: 1px;font-size: 75%;}
 .header-container{border-bottom: 2px dotted #ccc;max-height: 105px;}
 .main{margin: 20px 0;border-top: 8px solid #666;}
 .container_12{background-color: #f5f5f5;}
@@ -97,9 +104,9 @@ ul.first{padding: 0;}
 /*------------------------------------*\
 	$CONTACT
 \*------------------------------------*/
-.name{padding: 20px 65px;}
+.name{padding: 8px 65px;}
 .contact{padding: 20px 0;}
-.contact{margin-top: 5px;position: relative;right:5em;}
+.contact{margin-top: 5px;position: relative;right:12em;}
 .contact-info, .contact-links{display: inline-table;}
 .contact-info{position:relative; bottom: 9px;}
 .contact-links{margin-left: 5px;}
@@ -108,7 +115,7 @@ ul.first{padding: 0;}
 /*------------------------------------*\
 	$PDF
 \*------------------------------------*/
-.save{top: 20px; right: 10px;padding: 10px 0;background-color: #e4e4e4;
+.save{top: 28px; left: 10px;padding: 5px 0;background-color: #e4e4e4;
 -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;}
 .save div{padding-left:27px;}
 
@@ -167,7 +174,6 @@ li.employer.last{border-bottom: none;}
 
 @media print {
   * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } 
-  a, a:visited { text-decoration: underline; }
   pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
   thead { display: table-header-group; } 
   tr, img { page-break-inside: avoid; }
