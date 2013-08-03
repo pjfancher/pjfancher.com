@@ -99,7 +99,7 @@ ul.first{padding: 0;}
 .contact{padding: 20px 0;}
 .contact{margin-top: 5px;position: relative;right:12em;}
 .contact-info, .contact-links{display: inline-table;}
-.contact-info{position:relative; bottom: 9px;}
+.contact-info{position:relative; top: 5px; right: 15px;}
 .contact-links{margin-left: 5px;}
 .contact-link{font-size: 85%;}
 
