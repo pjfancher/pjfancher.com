@@ -126,6 +126,8 @@ li.site.last{border-bottom: none;}
 .site-info{padding-left: 85px;}
 .site-name{font-weight: bold;}
 .site-details, .employer-description{margin-top: 10px;font-size: 95%;}
+.site-details p { margin-top: 0; }
+.site-link{ color: #f248ac; } 
 
 /*------------------------------------*\
 	$EMPLOY
