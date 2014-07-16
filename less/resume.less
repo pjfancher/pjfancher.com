@@ -1,99 +1,224 @@
-/*------------------------------------*\
-	$HEADER
-\*------------------------------------*/
-h1{letter-spacing: 3px;text-transform: uppercase;font-size: 200%;}
-h2{letter-spacing: 2px;font-size: 130%;}
-h3{letter-spacing: 1px;font-size: 115%; line-height: 10px;padding-bottom: 5px;}
-h6{letter-spacing: 1px;font-size: 75%;}
-.header-container{border-bottom: 2px dotted #ccc;max-height: 105px;}
-.main{margin: 20px 0;border-top: 8px solid #666;}
-.container_12{background-color: #f5f5f5;}
-.content-wrapper{min-height: 1000px;}
-.content{padding: 10px 80px;}
-.section{border-bottom: 1px solid #ccc;padding: 20px 0;}
-.section-content{font-size: 80%;}
-ul.first{padding: 0;}
+/* HEADER
+*****************************************************************************/
+h1 {
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-size: 200%;
+}
 
-/*------------------------------------*\
-	$CONTACT
-\*------------------------------------*/
-.name{padding: 8px 65px;}
-.contact{padding: 20px 0;}
-.contact{margin-top: 5px;position: relative;right:12em;}
-.contact-info, .contact-links{display: inline-table;}
-.contact-info{position:relative; top: 5px; right: 15px;}
-.contact-links{margin-left: 5px;}
-.contact-link{font-size: 85%;}
+h2 {
+	letter-spacing: 2px;
+	font-size: 130%;
+}
 
-/*------------------------------------*\
-	$PDF
-\*------------------------------------*/
-.save{top: 28px; left: 10px;padding: 5px 0;background-color: #e4e4e4;
--webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;}
-.save div{padding-left:29px;}
+h3 {
+	letter-spacing: 1px;
+	font-size: 115%; 
+	line-height: 10px;
+	padding-bottom: 5px;	
+}
 
-/*------------------------------------*\
-	$SKILLS
-\*------------------------------------*/
-.skills{float: left;}
+h6 {
+	letter-spacing: 1px;
+	font-size: 75%;
+}
 
-/*------------------------------------*\
-	$SITES
-\*------------------------------------*/
-.sites{padding-left: 0;}
-li.site{margin-top: 20px;padding-bottom: 20px;border-bottom: 1px solid #ccc;}
-li.site.first{margin-top: 0;}
-li.site.last{border-bottom: none;}
-.site-thumb{float: left;}
-.site-info{padding-left: 85px;}
-.site-name{font-weight: bold;}
-.site-details, .employer-description{margin-top: 10px;font-size: 95%;}
-.site-details p { margin-top: 0; }
-.site-link{ color: #f248ac; } 
+.header-container {
+	border-bottom: 2px dotted #ccc;
+	max-height: 105px;
+}
 
-/*------------------------------------*\
-	$EMPLOY
-\*------------------------------------*/
-.employers{padding-left: 0;}
-li.employer{margin-top: 20px;padding-bottom: 20px;border-bottom: 1px solid #ccc;}
-li.employer.first{margin-top: 0;}
-li.employer.last{border-bottom: none;}
-.employer-time, .employer-location{display: inline;color: #777;}
-.employer-name{font-weight: bold;}
+.main {
+	margin: 20px 0;
+	border-top: 8px solid #666;
+}
 
-/*------------------------------------*\
-	$EDUCATION
-\*------------------------------------*/
-.education-city, .education-year{display: inline;color: #777;}
+.container_12 {
+	background-color: #f5f5f5;
+}
 
-/*------------------------------------*\
-	$FOOTER
-\*------------------------------------*/
-.footer{font-size: 75%;text-align: center;margin-bottom: 10px;}
-.foot{display: inline;}
-.foot:after{content: " • ";}
-.foot.last:after{content: none;}
+.content-wrapper {
+	min-height: 1000px;
+}
 
-@media only screen and (min-width: 35em) {}
+.content {
+	padding: 10px 80px;
+}
 
-.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
-.ir br { display: none; }
-.hidden { display: none !important; visibility: hidden; }
-.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
-.invisible { visibility: hidden; }
-.clearfix:before, .clearfix:after { content: ""; display: table; }
-.clearfix:after { clear: both; }
-.clearfix { *zoom: 1; }
+.section {
+	border-bottom: 1px solid #ccc;
+	padding: 20px 0;
+}
 
-@media print {
-  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } 
-  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; } 
-  tr, img { page-break-inside: avoid; }
-  img { max-width: 100% !important; }
-  @page { margin: 0.5cm; }
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3 { page-break-after: avoid; }
-  .save h5, .save div, .save{display: none;}
+.section-content {
+	font-size: 80%;
+}
+
+ul.first {
+	padding: 0;
+}
+
+
+/* CONTACT
+*****************************************************************************/
+.name{
+	padding: 8px 65px;
+}
+
+.contact{
+	padding: 20px 0;
+	margin-top: 5px;
+	position: relative;
+	right:12em;
+
+	.contact-info, 
+	.contact-links{
+		display: inline-table;
+	}
+
+	.contact-info{
+		position:relative; 
+		top: 5px; 
+		right: 15px;
+	}
+
+	.contact-links{
+		margin-left: 5px;
+
+		.contact-link{
+			font-size: 85%;
+		}
+	}
+}
+
+/* PDF
+*****************************************************************************/
+.save{
+	top: 28px; 
+	left: 10px;
+	padding: 5px 0;
+	background-color: #e4e4e4;
+	-webkit-border-radius: 8px; 
+	-moz-border-radius: 8px; 
+	border-radius: 8px;
+
+	> div {
+		text-align: center;
+	}
+}
+
+/* SKILLS
+*****************************************************************************/
+.skills{
+	float: left;
+}
+
+
+/* EMPLOYMENT
+*****************************************************************************/
+ul.employers{
+	padding-left: 0;
+	li.employer{
+		margin-top: 20px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #ccc;
+
+		&.first {
+			margin-top: 0;
+		}
+
+		&.last {
+			border-bottom: none;
+		}
+
+		.employer-time, 
+		.employer-location{
+			.inline;
+			color: #777;
+		}
+
+		.employer-name{
+			font-weight: bold;
+		}
+	}
+}
+
+
+/* SITES
+*****************************************************************************/
+ul.sites{
+	padding-left: 0;
+
+	li.site{
+		margin-top: 20px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid#ccc;
+
+		&.first {
+			margin-top: 0;
+		}
+
+		&.last {
+			border-bottom: none;
+		}
+
+		.site-thumb{
+			float: left;
+		}
+
+		.site-info{
+			padding-left: 85px;
+		}
+
+		.site-name{
+			font-weight: bold;
+		}
+
+		.site-details, 
+		.employer-description{
+			margin-top: 10px;
+			font-size: 95%;
+		}
+
+		.site-details p { 
+			margin-top: 0; 
+		}
+
+		.site-link{ 
+			color: @link-color;
+		} 
+	}
+}
+
+
+/* EDUCATION
+*****************************************************************************/
+
+.section-education {
+	.education-city, 
+	.education-year{
+		.inline;
+		color: #777;
+	}
+}
+
+
+/* FOOTER
+*****************************************************************************/
+.footer{
+	font-size: 75%;
+	text-align: center;
+	margin-bottom: 10px;
+
+	.foot{
+		.inline;
+
+		&:after{
+			content: " • ";
+		}
+
+		&.last:after{
+			content: none;
+		}
+	}
 }
