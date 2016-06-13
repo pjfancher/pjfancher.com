@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>PJ Fancher - Resumé</title>
+  <title>PJ Fancher - Resume</title>
   <meta name="description" content="">
 
   <meta name="viewport" content="width=device-width">
@@ -41,7 +41,10 @@
 	           <a href="http://www.pjfancher.com" target="_blank">pjfancher.com</a>
 	         </div>
 	         <div class="contact-github contact-link">
-	           <a href="http://www.github.com/peejfancher" target="_blank">github.com/peejfancher</a>
+	           <a href="http://www.github.com/db-pj" target="_blank">github.com/db-pj</a>
+	         </div>
+	         <div class="contact-linkedin contact-link">
+	           <a href="https://www.linkedin.com/in/pjfancher" target="_blank">linkedin.com/in/pjfancher</a>
 	         </div>
 	       </div>
 	     </h5>  
@@ -49,7 +52,7 @@
 	   
 	   <div class="save grid_2 pull_1">
 	     <div class="pdf"><h6><a href="PJFancher-Resume.pdf" target="_blank">download pdf</a></h6></div>
-	     <div class="print"><h6><a href="#" onclick="printpage()">print resumé</a></h6></div>
+	     <div class="print"><h6><a href="#" onclick="printpage()">print resume</a></h6></div>
 	   </div>
    </div>
   </header>
@@ -63,7 +66,7 @@
           <h2>Overview</h2>
         </div>
         <div class="section-content grid_8">
-          I am a Web Developer with 18 years experience. I began writing small web applications with Perl, PHP in 1998. I have well rounded experience with all aspects of Web Development from design (HTML, CSS, LESS, SASS) to Client-Side Scripting (Javascript, jQuery, Node.js) to Server-Side Scripting (PHP, Python) to Database configuration, design & administration (MySQL) and Web Server configuration.
+			I am a Web Developer with <?php echo date('Y') - 1998; ?> years experience. I began writing small web applications with Perl, PHP in 1998. I have well rounded experience with all aspects of Web Development from design (HTML, CSS, LESS, SASS) to Client-Side Scripting (Javascript, jQuery, Node.js) to Server-Side Scripting (PHP, Python) to Database configuration, design & administration (MySQL) and Web Server configuration.
         </div>
         <div class="clear"></div> 
       </div>
