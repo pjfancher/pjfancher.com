@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const name = 'PJ Fancher'
 const img = '/images/pj.webp'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = "PJ's blog"
 
 export default function Layout({ children, home }) {
   return (
@@ -25,6 +25,7 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <title>{siteTitle}</title>
       </Head>
       <header className={styles.header}>
         {home ? (
