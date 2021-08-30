@@ -1,9 +1,8 @@
-import Head from 'next/head'
 import Layout, { siteTitle } from 'components/layout'
 import utilStyles from 'styles/utils.module.css'
 import Link from 'next/link'
 import Date from 'components/date'
-import { getArticles } from 'lib/articles'
+import { getArticleSlugs, getArticles } from 'lib/articles'
 
 export async function getStaticProps() {
   const articles = await getArticles()
@@ -13,7 +12,6 @@ export async function getStaticProps() {
     }
   }
 }
-
 export default function Home({ articles }) {
   return (
     <Layout home>
@@ -21,15 +19,15 @@ export default function Home({ articles }) {
 			<h2 className={utilStyles.headingLg}>{siteTitle}</h2>
 			<ul className={utilStyles.list}>
 				{articles.map(article => (
-				<li className={utilStyles.listItem} key={article.id}>
-					<Link href={`/articles/${article.slug}`}>
-						<a>{article.title}</a>
-					</Link>
-					<br />
-					<small className={utilStyles.lightText}>
-						<Date dateString={article.published_at} />
-					</small>
-				</li>
+					<li className={utilStyles.listItem} key={article.id}>
+						<Link href={`/articles/${article.slug}`}>
+							<a>{article.title}</a>
+						</Link>
+						<br />
+						<small className={utilStyles.lightText}>
+							<Date dateString={article.published_at} />
+						</small>
+					</li>
 				))}
 			</ul>
 		</section>

@@ -36,5 +36,8 @@
     "node": ">=10.16.0 <=14.x.x",
     "npm": "^6.0.0"
   },
+  "resolutions": {
+    "graphql": "^14.7.0"
+  },
   "license": "MIT"
 }
