@@ -1,28 +1,29 @@
 import path from 'path'
 import { fetchAPI } from 'lib/api'
 
-const postsDirectory = path.join(process.cwd(), 'posts')
 
+/* Get Article Slugs
+*****************************************************************************/
+export async function getArticleSlugs() {
+  const articles = await getArticles()
+  const paths =  articles.map(article => {
+		return {
+			params: {
+				slug: article.slug
+			}
+		}
+  })
+	return paths
+}
+
+/* Get all articles
+*****************************************************************************/
 export async function getArticles() {
   return await fetchAPI('/articles')
 }
 
-export async function getArticleSlugs() {
-  const articles = await getArticles()
-
-  return articles.map(article => {
-    return {
-      params: {
-        slug: article.slug
-      }
-    }
-  })
-}
-
+/* Get single Article by slug
+*****************************************************************************/
 export async function getArticle(slug) {
-  const data = await fetchAPI('/articles/{slug}')
-
-  data
-  return {
-  }
+  return await fetchAPI('/articles/' + slug)
 }

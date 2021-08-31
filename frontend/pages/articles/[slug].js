@@ -4,37 +4,42 @@ import Date from 'components/date'
 import { getArticleSlugs, getArticle} from 'lib/articles'
 import utilStyles from 'styles/utils.module.css'
 
-export default function Article({post}) {
+export default function Article({article}) {
   return (
     <Layout>
       <Head>
-        <title>{post.title}</title>
+        <title>{article.title}</title>
       </Head>
       <article>
-        <h1 className={utilStyles.headingXl}>{post.title}</h1>
+        <h1 className={utilStyles.headingXl}>{article.title}</h1>
         <div className={utilStyles.lightText}>
-          <Date dateString={post.date} />
+					<Date dateString={article.published_at} />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+        <div dangerouslySetInnerHTML={{ __html: article.content}} />
       </article>
     </Layout>
   )
 }
 
+
+/* Static Props
+*****************************************************************************/
+export async function getStaticProps({ params }) {
+  const article = await getArticle(params.slug)
+  return {
+    props: {
+      article
+    }
+  }
+}
+
+/* Static Paths
+*****************************************************************************/
 export async function getStaticPaths() {
-  const paths = getArticleSlugs()
+  const paths = await getArticleSlugs()
 
   return {
     paths,
     fallback: false
-  }
-}
-
-export async function getStaticProps({ params }) {
-  const post = await getArticle(params.slug)
-  return {
-    props: {
-      post
-    }
   }
 }
