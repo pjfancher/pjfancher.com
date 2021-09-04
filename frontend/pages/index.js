@@ -7,22 +7,27 @@ import { getArticleSlugs, getArticles } from 'lib/articles'
 export default function Home({ articles }) {
   return (
     <Layout home>
-			<section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-				<h2 className={utilStyles.headingLg}>{siteTitle}</h2>
-				<ul className={utilStyles.list}>
-					{articles.map(article => (
-						<li className={utilStyles.listItem} key={article.id}>
-							<Link href={`/articles/${article.slug}`}>
-								<a>{article.title}</a>
-							</Link>
-							<br />
-							<small className={utilStyles.lightText}>
-								<Date dateString={article.published_at} />
-							</small>
-						</li>
-					))}
-				</ul>
-			</section>
+			<div className="">
+				<div class="flex">
+
+					<section className="latest-posts">
+						<h2 className="">{siteTitle}</h2>
+						<ul className="">
+							{articles.map(article => (
+								<li className="" key={article.id}>
+									<Link href={`/articles/${article.slug}`}>
+										<a>{article.title}</a>
+									</Link>
+									<br />
+									<small className="">
+										<Date dateString={article.published_at} />
+									</small>
+								</li>
+							))}
+						</ul>
+					</section>
+				</div>
+			</div>
     </Layout>
   )
 }

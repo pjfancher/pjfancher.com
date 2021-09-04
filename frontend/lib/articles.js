@@ -6,14 +6,13 @@ import { fetchAPI } from 'lib/api'
 *****************************************************************************/
 export async function getArticleSlugs() {
   const articles = await getArticles()
-  const paths =  articles.map(article => {
+  return articles.map(article => {
 		return {
 			params: {
 				slug: article.slug
 			}
 		}
   })
-	return paths
 }
 
 /* Get all articles

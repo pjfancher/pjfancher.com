@@ -10,7 +10,7 @@ export const siteTitle = "PJ's blog"
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div className="header-container">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -27,6 +27,7 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
         <title>{siteTitle}</title>
       </Head>
+
       <header className={styles.header}>
         {home ? (
           <>
