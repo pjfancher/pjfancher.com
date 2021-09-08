@@ -1,0 +1,28 @@
+.container {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	max-width: $containerSize;
+} // .container
+
+.grid {
+	display: grid;
+	gap: 30px;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: auto 1fr;
+	grid-template-areas:
+	"latest categories"
+	"latest popular";
+
+	.latest {
+		grid-area: latest;
+	} // .latest
+
+	.popular {
+		grid-area: popular;
+	} // .popular
+
+	.categories {
+		grid-area: categories;
+	} // .categories
+} // .grid
