@@ -5,7 +5,6 @@ import Container from 'components/container'
 import Grid from 'components/grid'
 import Sidebar from 'components/sidebar'
 import { getArticleSlugs, getArticle} from 'lib/articles'
-import utilStyles from 'styles/utils.module.css'
 
 export default function Article({article}) {
   return (
@@ -16,10 +15,10 @@ export default function Article({article}) {
 			<Container>
 				<Grid>
 					<article>
-						<h1 className={utilStyles.headingXl}>{article.title}</h1>
-						<div className={utilStyles.lightText}>
-							<Date dateString={article.published_at} />
-						</div>
+						<h1>{article.title}</h1>
+
+						<Date dateString={article.published_at} />
+
 						<div dangerouslySetInnerHTML={{ __html: article.content}} />
 					</article>
 
