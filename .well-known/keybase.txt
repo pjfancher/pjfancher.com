@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/pjfancher
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://pjfancher.com
+  * I am pjfancher (https://keybase.io/pjfancher) on keybase.
+  * I have a public key ASBvfmxuCKsuszdvp6OrUunC3B9OQHzwJ04I1IYkoGZKiQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01206f7e6c6e08ab2eb3376fa7a3ab52e9c2dc1f4e407cf0274e08d48624a0664a890a",
+      "host": "keybase.io",
+      "kid": "01206f7e6c6e08ab2eb3376fa7a3ab52e9c2dc1f4e407cf0274e08d48624a0664a890a",
+      "uid": "2b6fb248738995f8ec0fb4a3c2414919",
+      "username": "pjfancher"
+    },
+    "merkle_root": {
+      "ctime": 1638195464,
+      "hash": "57ae058fc6df6d05874138490334db0ebf8a9a50445d5d14af7efbaab73fc95ea81bd69d543ebebe766115a44f1125c1acc556e0059f180e138cea9605375406",
+      "hash_meta": "b8309753e0e24ecaa214a06bc96a33d5557adf3d8b311c3d82bfd8024c0cf2d8",
+      "seqno": 21322572
+    },
+    "service": {
+      "entropy": "w5WpdXU5Ga3uDkKxsPdVr135",
+      "hostname": "pjfancher.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.8.0"
+  },
+  "ctime": 1638195515,
+  "expire_in": 504576000,
+  "prev": "ced7240d8208957033d066a896d50dfb4038d4cac482f728c3caf00872d9145e",
+  "seqno": 14,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgb35sbgirLrM3b6ejq1LpwtwfTkB88CdOCNSGJKBmSokKp3BheWxvYWTESpcCDsQgztckDYIIlXAz0GaoltUN+0A41MrEgvcow8rwCHLZFF7EIM1YoKNmZ67jD2uWllsoh4sjW5bAO6GgKuJ9jrs/CDIAAgHCo3NpZ8RA5mBl4rnhvBWFRouU8+sJGE8F16ZkZe3ayCiyv15usDFO32JRcHV57RlDDco6ufrhMpuJUWqi39tyNI+CGm79C6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIEQxkE4pn2ZOI+dlRS+0oFDVU1XThN3+IYWIraeryb1no3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/pjfancher
+
+==================================================================
